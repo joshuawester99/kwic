@@ -52,6 +52,7 @@ public class App {
     // violated Single-Responsibility principle but 
     // each time the string is modified, it and its new first word are put in the map
     private static String addCircularShiftedString(String line) {
+    	
     	// split into first word, any deliminator/break, and the rest of the string
     	String[] split = line.split("(?!^)\\b", 3); 
     	
